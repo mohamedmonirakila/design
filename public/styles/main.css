@@ -1,0 +1,381 @@
+body {
+   max-width: 1921px;
+   margin: 0 auto;
+   padding: 0;
+}
+
+
+
+
+.first {
+   background-color: #001F3F;
+   width: 100%;
+   margin: 0;
+}
+
+.navBar-item {
+   display: flex;
+}
+.english {
+   font-size: 1.5rem;
+   font-family: serif;
+   display: inline;
+   color: white;
+   margin: 0;
+   padding-left: 40px;
+   line-height: 2.5rem;
+}
+
+.arabic {
+   font-family: "Cairo", sans-serif;
+   font-size: 2.1rem;
+   word-spacing: 10px;
+}
+
+.header {
+   display: flex;
+   padding-top: 45px;
+   justify-content: space-between;
+   padding-right: 15%;
+   padding-left: 3%;
+   position: relative; /* Ensure proper positioning context */
+}
+
+/* Style for hamburger */
+.hamburger {
+   display: none; /* Hide by default */
+   cursor: pointer;
+   font-size: 24px;
+   color: white;
+   margin-left: auto; /* Align to the right */
+   padding-right: 20px;
+   z-index: 1001; /* Ensure it's above the sidebar */
+   position: relative; /* Ensure it's positioned properly */
+}
+
+/* Style for sidebar */
+.sidebar {
+   display: none; /* Hidden by default */
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 250px;
+   height: 100%;
+   background-color: #FFC631;
+   padding-top: 60px;
+   transform: translateX(100%);
+   transition: transform 0.3s ease;
+   z-index: 1000; /* Ensure it's below the hamburger */
+}
+
+/* Sidebar Navigation Styling */
+.sidebar-nav {
+   list-style: none;
+   padding: 0;
+}
+
+.sidebar-nav .navList {
+   padding: 15px 20px;
+   color: black;
+   text-decoration: none;
+   font-family: "Archivo", sans-serif;
+   font-weight: 600;
+   display: block;
+}
+
+/* Navigation Bar Styling */
+.navButtons {
+   display: flex;
+   justify-content: space-around;
+   padding-inline-end: 30px;
+   padding-left: 50px;
+   padding-top: 8px;
+   padding-top: 20px;
+}
+
+.navList { 
+   background-color: transparent;
+   display: inline;
+   font-size: 14px;
+   padding: 0 20px;
+   color: white;
+   font-family: "Archivo", sans-serif;
+   font-weight: 600;
+   line-height: 21px;
+   height: 25px;
+   text-align: left;  
+}
+
+.navList img {
+   display: block; 
+   margin-top: 2px; 
+}
+
+/* End of NavBar */
+.container1 {
+   display: flex;
+   padding: 5px 9% 5px 16%;
+   align-items: flex-end;
+   flex-wrap: nowrap;
+}
+
+.description {
+   color: white;
+   font-family: "Roboto", sans-serif   ;
+   font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+   font-weight: 400;
+   line-height: 28.5px;
+   text-align: left;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+
+.heroes {
+   flex-basis: 38%;
+   padding-right: 3.5%;
+   padding-bottom: 12%;
+}
+
+.line{
+   display: inline ;
+   padding-bottom: 5px;
+}
+
+.headingParag {
+   color: white;
+   display: inline;
+   font-family: "Archivo", sans-serif;
+   font-size: clamp(0.75rem, 1vw, 1rem);
+   font-weight: 600; 
+   line-height: 21px;
+   text-align: left;
+}
+
+h1 {
+   color: white;
+   font-family: "Archivo", sans-serif;
+   font-size: clamp(1.5em, 2vw, 58px);
+   font-weight: 800;
+   line-height: clamp(2rem, 2vw, 58px);
+   text-align: left;
+   margin: 5px ;
+}
+
+.consBtn {
+   background-color: #FFC631;
+   border: 0;
+   font-family: "Archivo", sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 18px;
+   text-align: left;
+   padding: 13px 18px 13px 18px;
+}
+
+
+
+/* FEATURES */ 
+
+h6 {
+   display: inline;
+   margin-left: 15px;
+   font-family: "Archivo", sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 21px;
+   text-align: left;
+
+}
+
+h2 {
+   font-family: "Archivo", sans-serif;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 52.8px;
+   text-align: left;
+   color: #000810;
+   padding-top: 20px;
+}
+
+.blue-h2 {
+   font-family:"Archivo", sans-serif;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 52.8px;
+   text-align: left;
+   color: #25AAE1;
+   ;
+}
+
+.featureNum {
+   font-family: "Archivo", sans-serif;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 52.8px;
+   text-align: left;
+   color: #EAE6E6;
+}
+
+.feature.col {
+   border: 1px solid #E3E3E3;
+   margin: 0.9%;
+   flex-basis: 31.3636%;
+   flex-grow: 1;
+   padding: 2%;
+}
+
+.feature-p {
+   font-family: "Archivo", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28.8px;
+   text-align: left;
+   padding-right: 17.5%;
+}
+
+.icon-link {
+   font-family: "Archivo", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+   line-height: 52.8px;
+    text-align: left;
+    color: #25AAE1;
+    padding: 0.7% 0 0.7% 0;
+
+}
+
+.features-2col {
+   padding: 4.375rem 4.375rem 0 0;
+}
+.featuresWWD {
+   padding-top: 4.375rem;
+   padding-bottom: 2.2rem;
+}
+
+.features-h3
+{
+   font-family: "Archivo", sans-serif;
+   font-size: 1.75rem;
+   font-weight: 700;
+   line-height: 52.8px;
+   text-align: left;
+   color: white;
+}
+
+.details-2 {
+   color: #FFC631;
+   font-family: "Archivo", sans-serif;
+   font-size: 1.125rem;
+   font-weight: 700;
+   line-height: 52.8px;
+   text-align: left;
+
+}
+
+   /* Media Queries */
+@media (max-width: 1400px) {
+      body {   
+         width: 100%;
+      }
+      .features-h3 {
+         font-size: 1.6rem;
+      }
+      
+}
+@media (max-width:1270px) {
+   body {
+      width: 100%;
+      padding: 0;
+  }
+  .header {
+     padding-right: 10px;
+     padding-left: 10px;
+  }
+  .sidebar.active {
+     display: block; /* Ensure sidebar is visible when active */
+     transform: translateX(0); /* Slide in the sidebar */
+  }
+  .hamburger {
+     display: block; /* Show hamburger on mobile */
+  }
+  .navButtons {
+      display: none; /* Hide navbar on mobile */
+  }
+  .container1 {
+   padding-top: 50px;
+   flex-wrap: wrap;
+   justify-content: center;
+   }
+   .heroes {
+      flex-basis: 100%;
+      padding-bottom: 50px;
+      justify-self: center;
+   }
+   .feature.col {
+       border: 1px solid #E3E3E3;
+      margin: 0.9%;
+      flex-basis: 31.3636%;
+      flex-grow: 1;
+   }
+   .features-h3 {
+      font-size: 1.3rem;
+   }
+
+}
+@media (max-width: 748px) {
+   body {
+       width: 100%;
+       padding: 0;
+   }
+   .header {
+      padding-right: 10px;
+      padding-left: 10px;
+   }
+   .sidebar.active {
+      display: block; /* Ensure sidebar is visible when active */
+      transform: translateX(0); /* Slide in the sidebar */
+   }
+   .hamburger {
+      display: block; /* Show hamburger on mobile */
+   }
+   .navButtons {
+       display: none; /* Hide navbar on mobile */
+   }
+   .container1 {
+      padding-top: 50px;
+      flex-wrap: wrap;
+   }
+   .english {
+      line-height: 30px;
+      font-size: 1rem;
+   }
+   .arabic {
+      font-size: 1.35rem;
+   }
+   .heroes {
+      flex-basis: 100%;
+      padding-bottom: 50px;
+   }
+   .feature.col {
+      border: 1px solid #E3E3E3;
+     margin: 0.9%;
+     flex-grow: 1;
+     flex-basis: auto;
+  }
+  .features-h3 {
+   font-size: 1.7rem;
+  }
+  .features-2col {
+      padding: 1rem 1rem 0 1rem;
+   }
+   .featuresWWD {
+      padding-top: 3rem;
+      padding-bottom: 1.2rem;
+   }
+
+
+}
