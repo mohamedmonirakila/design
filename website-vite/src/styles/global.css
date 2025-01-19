@@ -1,0 +1,137 @@
+/* src/styles/global.css */
+body {
+  font-family: "Archivo", sans-serif;
+  background-color: #ffffff; /* Light Bootstrap gray */
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  background-color: #001f3f;
+  position: relative;
+  overflow: hidden;
+}
+.overlay-drawing {
+  position: absolute;
+  top: 0;
+  left: 0.9375rem;
+  width: 63rem; /* Add 'px' or another unit for width */
+  height: 50.8125rem; /* Add 'px' or another unit for height */
+  background: url("/images/background.png"); /* Ensure proper quotes and path */
+  /* transform: rotate(154deg); Remove quotes around the value */
+  /* transform-origin: 0 0; */
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Content stays above the overlay */
+}
+
+.header-logo {
+  padding-top: 1.1875rem;
+}
+
+.nav-item {
+  padding-top: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.nav-link {
+  background-color: transparent;
+  display: inline;
+  color: white;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.3125rem;
+  font-size: 0.875rem;
+  padding: 0;
+}
+
+.nav-item a {
+  display: block;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.heroes {
+  padding-right: 1.6875rem;
+  padding-bottom: 6.5rem;
+}
+
+.heroes h1 {
+  font-family: "Archivo", sans-serif;
+
+  font-size: 3.625rem;
+  font-weight: 700;
+
+  text-align: left;
+}
+
+.heroes .headingParag {
+  font-size: 1rem;
+  display: inline;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 1.78125rem;
+  text-align: left;
+  padding-bottom: 1.875rem;
+}
+
+.consBtn {
+  background-color: #ffc631;
+  border: 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: left;
+  padding: 1.0625rem 1.875rem;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    flex-wrap: wrap;
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .heroImg {
+    order: -1;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroImg img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .hero {
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+
+  .heroImg {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 6.4rem 2rem 6.4rem;
+  }
+}
