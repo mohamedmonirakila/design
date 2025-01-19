@@ -120,6 +120,30 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  .heroes h1 {
+    font-size: 2rem;
+  }
+
+  .heroes .headingParag {
+    font-size: 0.7rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+  }
+
+  .consBtn {
+    background-color: #ffc631;
+    border: 0;
+    font-family: "Archivo", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-align: left;
+    padding: 0.8rem 1.5rem;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 1000px) {
