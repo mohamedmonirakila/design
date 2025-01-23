@@ -5,14 +5,10 @@ import Button from "./Button";
 export default function Hero() {
   return (
     <div className="container hero col-xxl-12">
+      <div className="overlay-drawing"></div>
       <div className="flex-item heroes">
-        <div>
-          <img
-            src="/images/pseudo.png"
-            alt="yellowline"
-            className="line"
-            style={{ width: "60px", height: "2px", paddingRight: "1.25rem" }}
-          />
+        <div className="heroHead">
+          <img src="/images/pseudo.png" alt="yellowline" className="line" />
           <p className="headingParag">PROFESSIONAL. INNOVATIVE. RELIABLE.</p>
         </div>
         <div>

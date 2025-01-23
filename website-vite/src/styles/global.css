@@ -1,9 +1,9 @@
-/* src/styles/global.css */
-body {
+html {
   font-family: "Archivo", sans-serif;
   background-color: #ffffff; /* Light Bootstrap gray */
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 .home {
@@ -13,13 +13,11 @@ body {
 }
 .overlay-drawing {
   position: absolute;
-  top: 0;
-  left: 0.9375rem;
-  width: 63rem; /* Add 'px' or another unit for width */
-  height: 50.8125rem; /* Add 'px' or another unit for height */
+  top: 0.5rem;
+  left: 0.5rem;
+  width: vw; /* Add 'px' or another unit for width */
+  height: 126vh; /* Add 'px' or another unit for height */
   background: url("/images/background.png"); /* Ensure proper quotes and path */
-  /* transform: rotate(154deg); Remove quotes around the value */
-  /* transform-origin: 0 0; */
   z-index: 0;
   opacity: 0.5;
 }
@@ -67,20 +65,40 @@ body {
 .heroes {
   padding-right: 1.6875rem;
   padding-bottom: 6.5rem;
+  flex-basis: 43.4%;
+}
+.heroes img {
+  width: 3.75rem;
+  height: 0.125rem;
+  padding-right: 1.25rem;
+}
+
+.heroImg {
+  flex-basis: 56.6%;
+}
+
+.heroImg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .heroes h1 {
   font-family: "Archivo", sans-serif;
-
   font-size: 3.625rem;
-  font-weight: 700;
-
+  font-weight: 800;
   text-align: left;
+  line-height: 3.625rem;
 }
 
+.heroHead {
+  padding-bottom: 0.75rem;
+}
 .heroes .headingParag {
   font-size: 1rem;
+  line-height: 1.3125rem;
   display: inline;
+  font-weight: 600;
 }
 
 .description {
@@ -90,6 +108,7 @@ body {
   line-height: 1.78125rem;
   text-align: left;
   padding-bottom: 1.875rem;
+  padding-right: 4.25rem;
 }
 
 .consBtn {
@@ -103,59 +122,126 @@ body {
   padding: 1.0625rem 1.875rem;
 }
 
-@media (max-width: 1000px) {
-  .hero {
-    flex-wrap: wrap;
-    padding: 2rem 2rem 0 2rem;
-  }
+/* FEATURES */
 
-  .heroImg {
-    order: -1;
-    padding-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-  }
+.feature-flex {
+  column-gap: 2.0625rem;
+}
 
-  .heroImg img {
-    max-width: 100%;
-    height: auto;
-  }
+h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  text-align: left;
+  color: #000810;
+  padding-top: 1.25rem;
+}
 
-  .heroes h1 {
-    font-size: 2rem;
-  }
+.blue-h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  text-align: left;
+  color: #25aae1;
+}
 
-  .heroes .headingParag {
-    font-size: 0.7rem;
-  }
+#featured-3 img {
+  width: 2.5rem;
+  height: 0.125rem;
+}
 
-  .description {
-    font-size: 0.9rem;
-    padding-bottom: 1rem;
-  }
+h6 {
+  display: inline;
+  margin-left: 1.25rem;
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3125rem;
+  text-align: left;
+}
 
-  .consBtn {
-    background-color: #ffc631;
-    border: 0;
-    font-family: "Archivo", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 700;
-    line-height: 1rem;
-    text-align: left;
-    padding: 0.8rem 1.5rem;
+.feature.col {
+  border: 1px solid #e3e3e3;
+  flex-basis: 31.3636%;
+  flex-grow: 1;
+  padding: 2.1% 2.1% 0.8% 2.1%;
+}
+
+.featureNum {
+  font-family: "Archivo", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  text-align: left;
+  color: #eae6e6;
+}
+
+.feature h3 {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  text-align: left;
+}
+
+.feature-p {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  text-align: left;
+  padding-right: 17.5%;
+}
+
+.icon-link {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  text-align: left;
+  color: #25aae1;
+  padding: 4% 0 0.7% 0;
+}
+
+#featured-3 .icon-link img {
+  padding-left: 0.4375rem;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 1399.89px) and (min-width: 1199px) {
+  html {
+    font-size: 13.81px;
   }
 }
 
-@media (max-width: 1200px) and (min-width: 1000px) {
+@media (max-width: 1199.89px) and (min-width: 991px) {
+  html {
+    font-size: 11.63px;
+  }
+}
+
+@media (max-width: 991.89px) and (min-width: 767px) {
+  html {
+    font-size: 8.73px;
+  }
+}
+
+@media (max-width: 767.89px) and (min-width: 576px) {
+  html {
+    font-size: 6.545px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: calc((100vw / 1320) * 16);
+  }
+
   .hero {
     flex-wrap: wrap;
     padding-top: 2rem;
-  }
-
-  .heroImg {
-    order: -1;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 6.4rem 2rem 6.4rem;
   }
 }
