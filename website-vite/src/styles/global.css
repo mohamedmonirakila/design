@@ -59,13 +59,14 @@ html {
   align-items: flex-end;
   flex-wrap: nowrap;
   color: #ffffff;
-  margin-bottom: 2rem;
+  padding-bottom: 2.0625rem;
+  padding-top: 0.4375rem;
 }
 
 .heroes {
   padding-right: 1.6875rem;
   padding-bottom: 6.5rem;
-  flex-basis: 43.4%;
+  flex-basis: 44.06%;
 }
 .heroes img {
   width: 3.75rem;
@@ -74,13 +75,30 @@ html {
 }
 
 .heroImg {
-  flex-basis: 56.6%;
+  flex-basis: 55.94%;
+  position: relative;
 }
 
-.heroImg img {
+.heroImg .constructionImg {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.heroVector {
+  max-width: 24.4375rem;
+  height: auto;
+  position: absolute;
+  top: -2.18625rem;
+  left: -0.3125rem;
+}
+
+.heroVector2 {
+  max-width: 24.4375rem;
+  height: auto;
+  position: absolute;
+  top: -2.18625rem;
+  right: -0.1rem;
 }
 
 .heroes h1 {
@@ -108,7 +126,7 @@ html {
   line-height: 1.78125rem;
   text-align: left;
   padding-bottom: 1.875rem;
-  padding-right: 4.25rem;
+  padding-right: 5rem;
 }
 
 .consBtn {
@@ -123,28 +141,12 @@ html {
 }
 
 /* FEATURES */
+#featured-3 {
+  padding-top: 4.0625rem;
+}
 
 .feature-flex {
   column-gap: 2.0625rem;
-}
-
-h2 {
-  font-family: "Archivo", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 3.3rem;
-  text-align: left;
-  color: #000810;
-  padding-top: 1.25rem;
-}
-
-.blue-h2 {
-  font-family: "Archivo", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 3.3rem;
-  text-align: left;
-  color: #25aae1;
 }
 
 #featured-3 img {
@@ -162,16 +164,41 @@ h6 {
   text-align: left;
 }
 
+.feature-top-h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  text-align: left;
+  color: #000810;
+  padding-top: 1.8125rem;
+  margin-bottom: 1.75rem;
+}
+
+.blue-h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  text-align: left;
+  color: #25aae1;
+}
+.feature-flex {
+  column-gap: 2.0625rem;
+  font-size: 16px;
+}
+
 .feature.col {
   border: 1px solid #e3e3e3;
   flex-basis: 31.3636%;
   flex-grow: 1;
-  padding: 2.1% 2.1% 0.8% 2.1%;
+  padding: 2.5em 1.8125em 1em 1.8125em;
+  font-size: 16px;
 }
 
 .featureNum {
   font-family: "Archivo", sans-serif;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 700;
   line-height: 3.3rem;
   text-align: left;
@@ -180,7 +207,7 @@ h6 {
 
 .feature h3 {
   font-family: "Archivo", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.75em;
   font-weight: 700;
   line-height: 3.3rem;
   text-align: left;
@@ -188,16 +215,16 @@ h6 {
 
 .feature-p {
   font-family: "Archivo", sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 400;
   line-height: 1.8rem;
   text-align: left;
-  padding-right: 17.5%;
+  padding-right: 2em;
 }
 
 .icon-link {
   font-family: "Archivo", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.125em;
   font-weight: 700;
   line-height: 3.3rem;
   text-align: left;
@@ -206,7 +233,7 @@ h6 {
 }
 
 #featured-3 .icon-link img {
-  padding-left: 0.4375rem;
+  padding-left: 0.4375em;
   width: auto;
   height: auto;
 }
@@ -215,10 +242,18 @@ h6 {
   html {
     font-size: 13.81px;
   }
+
+  .feature.col {
+    font-size: 13.81px;
+  }
 }
 
 @media (max-width: 1199.89px) and (min-width: 991px) {
   html {
+    font-size: 11.63px;
+  }
+
+  .feature.col {
     font-size: 11.63px;
   }
 }
@@ -227,21 +262,65 @@ h6 {
   html {
     font-size: 8.73px;
   }
+
+  .feature.col {
+    font-size: 13.346px;
+  }
+  .feature-p {
+    padding-right: 5rem;
+  }
+
+  .feature.col {
+    flex-basis: 48.5%;
+  }
 }
 
 @media (max-width: 767.89px) and (min-width: 576px) {
   html {
     font-size: 6.545px;
   }
+
+  .feature.col {
+    flex-basis: auto;
+    font-size: 16px;
+    padding: 2.5em 1.8125em 1em 1.8125em;
+  }
+
+  .featureNum {
+    line-height: 1em;
+  }
+
+  .feature h3 {
+    line-height: 1em;
+  }
+
+  .feature-p {
+    line-height: 1.5em;
+  }
 }
 
 @media (max-width: 576px) {
   html {
-    font-size: calc((100vw / 1320) * 16);
+    font-size: calc((100vw / 1320) * 32);
   }
 
   .hero {
     flex-wrap: wrap;
-    padding-top: 2rem;
+    padding: 2rem 7.5% 0 7.5%;
+  }
+
+  .heroes {
+    flex-basis: 100%;
+    padding-bottom: 3.5rem;
+  }
+
+  .heroImg {
+    order: -1;
+    padding-bottom: 2rem;
+    flex-basis: 100%;
+  }
+
+  .feature.col {
+    flex-basis: auto;
   }
 }

@@ -21,7 +21,21 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex-item heroImg">
-        <img src="/images/hero.png" alt="earth picture" />
+        <img
+          className="constructionImg"
+          src="/images/hero.png"
+          alt="constructionSite"
+        />
+        <img
+          className="heroVector"
+          src="/images/heroVector.png"
+          alt="earth picture"
+        />
+        <img
+          className="heroVector2"
+          src="/images/heroVector2.png"
+          alt="earth picture"
+        />
       </div>
     </div>
   );

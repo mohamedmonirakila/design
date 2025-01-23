@@ -5,10 +5,10 @@ import Button from "./Button";
 export default function Feature() {
   return (
     <div>
-      <div className="container px-2.5 py-5" id="featured-3">
+      <div className="container" id="featured-3">
         <img src="/images/pseudo.png" alt="yellowline" />
         <h6>OUR SERVICES</h6>
-        <h2 className="pb-2">
+        <h2 className="feature-top-h2">
           Multi-Disciplined
           <br />
           Engineering <span className="blue-h2">Solutions</span>
@@ -121,77 +121,6 @@ export default function Feature() {
               DETAILS
               <img src="/images/vector.png" alt="arrow" />
             </a>
-          </div>
-        </div>
-      </div>
-      <div className="first">
-        <div className="container px-4 pt-5" id="hanging-icons">
-          <img src="/images/pseudo.png" alt="yellowline" className="line" />
-          <h6 style={{ color: "white" }}>WHAT WE DO</h6>
-          <h2 className="pb-2" style={{ color: "white" }}>
-            Our <span className="blue-h2">Services</span>
-          </h2>
-          <div className="row g-4 pt-5 row-cols-1 row-cols-lg-3">
-            <div className="col d-flex align-items-start features-2col">
-              <div>
-                <img
-                  src="/images/feature.jfif"
-                  alt="features"
-                  style={{ maxWidth: "365px", objectFit: "cover" }}
-                />
-                <div className="featuresWWD">
-                  <h3 className="features-h3">Language Courses</h3>
-                  <a
-                    href="#"
-                    className="details-2 icon-link"
-                    style={{ textDecoration: "none" }}
-                  >
-                    DETAILS
-                    <img src="/images/Vector1.png" alt="arrow" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col d-flex align-items-start features-2col">
-              <div>
-                <img
-                  src="/images/feature.jfif"
-                  alt="features"
-                  style={{ maxWidth: "365px", objectFit: "cover" }}
-                />
-                <div className="featuresWWD">
-                  <h3 className="features-h3">Administrative Courses</h3>
-                  <a
-                    href="#"
-                    className="details-2 icon-link"
-                    style={{ textDecoration: "none" }}
-                  >
-                    DETAILS
-                    <img src="/images/Vector1.png" alt="arrow" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col d-flex align-items-start features-2col">
-              <div>
-                <img
-                  src="/images/feature.jfif"
-                  alt="features"
-                  style={{ maxWidth: "365px", objectFit: "cover" }}
-                />
-                <div className="featuresWWD">
-                  <h3 className="features-h3">Scholarships Courses</h3>
-                  <a
-                    href="#"
-                    className="details-2 icon-link"
-                    style={{ textDecoration: "none" }}
-                  >
-                    DETAILS
-                    <img src="/images/Vector1.png" alt="arrow" />
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
