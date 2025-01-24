@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Navbar() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  // Toggle sidebar
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div className="container">
       <header
@@ -10,11 +17,11 @@ export default function Navbar() {
       >
         <a
           href="/"
-          className="header-logo d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          className="header-logo d-flex align-items-center mb-3 mb-sm-0 me-sm-auto link-body-emphasis text-decoration-none"
         >
           <svg
-            width="238"
-            height="76"
+            width="14.875rem"
+            height="4.75rem"
             viewBox="0 0 238 76"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -87,6 +94,107 @@ export default function Navbar() {
             />
           </svg>
         </a>
+        {/* Hamburger Menu for small screens */}
+        <button
+          className="navbar-toggler collapsed d-block d-sm-none"
+          type="button"
+          onClick={toggleSidebar}
+          style={{ border: "none", background: "transparent" }}
+        >
+          <span
+            style={{ fontSize: "2rem", cursor: "pointer", color: "#ffc631" }}
+          >
+            ☰
+          </span>
+        </button>
+
+        <div
+          className={`sidebar ${isSidebarOpen ? "sidebar-open" : ""} d-sm-none`}
+        >
+          <button
+            className="navbar-toggler-close collapsed d-block d-sm-none"
+            type="button"
+            onClick={toggleSidebar}
+            style={{ border: "none", background: "transparent" }}
+          >
+            <span
+              style={{ fontSize: "2rem", cursor: "pointer", color: "#ffc631" }}
+            >
+              ☰
+            </span>
+          </button>
+          <ul className="nav flex-column">
+            <li className="nav-item">
+              <a href="/" className="nav-link">
+                HOME
+              </a>
+              <img
+                src="/images/pseudo.png"
+                alt="yellowline"
+                id="homeImg"
+                style={{
+                  display: window.location.pathname === "/" ? "block" : "none",
+                }}
+              />
+            </li>
+            <li className="nav-item">
+              <a href="/about" className="nav-link">
+                ABOUT
+              </a>
+              <img
+                src="/images/pseudo.png"
+                id="aboutImg"
+                alt="yellowline"
+                style={{
+                  display:
+                    window.location.pathname === "/about" ? "block" : "none",
+                }}
+              />
+            </li>
+            <li className="nav-item">
+              <a href="/services" className="nav-link">
+                SERVICES
+              </a>
+              <img
+                id="servicesImg"
+                src="/images/pseudo.png"
+                alt="yellowline"
+                style={{
+                  display:
+                    window.location.pathname === "/services" ? "block" : "none",
+                }}
+              />
+            </li>
+            <li className="nav-item">
+              <a href="/projects" className="nav-link">
+                PROJECTS
+              </a>
+              <img
+                id="projectsImg"
+                src="/images/pseudo.png"
+                alt="yellowline"
+                style={{
+                  display:
+                    window.location.pathname === "/projects" ? "block" : "none",
+                }}
+              />
+            </li>
+            <li className="nav-item">
+              <a href="/contacts" className="nav-link">
+                CONTACTS
+              </a>
+              <img
+                src="/images/pseudo.png"
+                alt="yellowline"
+                id="contactsImg"
+                style={{
+                  display:
+                    window.location.pathname === "/contacts" ? "block" : "none",
+                }}
+              />
+            </li>
+          </ul>
+        </div>
 
         <ul className="nav nav-pills">
           <li className="nav-item">
@@ -96,8 +204,7 @@ export default function Navbar() {
             <img
               src="/images/pseudo.png"
               alt="yellowline"
-              width="59.92px"
-              height="2px"
+              id="homeImg"
               style={{
                 display: window.location.pathname === "/" ? "block" : "none",
               }}
@@ -109,9 +216,8 @@ export default function Navbar() {
             </a>
             <img
               src="/images/pseudo.png"
+              id="aboutImg"
               alt="yellowline"
-              width="68px"
-              height="2px"
               style={{
                 display:
                   window.location.pathname === "/about" ? "block" : "none",
@@ -123,13 +229,12 @@ export default function Navbar() {
               SERVICES
             </a>
             <img
+              id="servicesImg"
               src="/images/pseudo.png"
               alt="yellowline"
-              width="89px"
-              height="2px"
               style={{
                 display:
-                  window.location.pathname === "/about" ? "block" : "none",
+                  window.location.pathname === "/services" ? "block" : "none",
               }}
             />
           </li>
@@ -138,28 +243,26 @@ export default function Navbar() {
               PROJECTS
             </a>
             <img
-              src="/pseudo.png"
+              id="projectsImg"
+              src="/images/pseudo.png"
               alt="yellowline"
-              width="94px"
-              height="2px"
               style={{
                 display:
-                  window.location.pathname === "/about" ? "block" : "none",
+                  window.location.pathname === "/projects" ? "block" : "none",
               }}
             />
           </li>
           <li className="nav-item" style={{ margin: 0, paddingRight: 0 }}>
-            <a href="#" className="nav-link">
+            <a href="#" className="nav-link contacts">
               CONTACTS
             </a>
             <img
               src="/images/pseudo.png"
               alt="yellowline"
-              width="94px"
-              height="2px"
+              id="contactsImg"
               style={{
                 display:
-                  window.location.pathname === "/about" ? "block" : "none",
+                  window.location.pathname === "/contacts" ? "block" : "none",
               }}
             />
           </li>

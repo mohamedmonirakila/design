@@ -6,7 +6,11 @@ export default function Feature() {
   return (
     <div>
       <div className="container" id="featured-3">
-        <img src="/images/pseudo.png" alt="yellowline" />
+        <img
+          className="yellow-line"
+          src="/images/pseudo.png"
+          alt="yellowline"
+        />
         <h6>OUR SERVICES</h6>
         <h2 className="feature-top-h2">
           Multi-Disciplined

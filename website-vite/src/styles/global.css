@@ -31,6 +31,51 @@ html {
   padding-top: 1.1875rem;
 }
 
+/* navbar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 40vw;
+  height: 100vh;
+  background-color: rgb(42 48 53) !important;
+  color: #fff;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar-open {
+  left: 0;
+  padding: 4.8rem 7.5%;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+}
+
+.sidebar .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-toggler-close {
+  padding: 0;
+  font-size: 2.5rem;
+}
+
+/* Hamburger menu for small screens */
+.navbar-toggler {
+  position: absolute;
+  top: 6rem;
+  left: 7.5%;
+  z-index: 2;
+}
+
 .nav-item {
   padding-top: 2.5rem;
   margin-right: 2.5rem;
@@ -50,6 +95,35 @@ html {
 
 .nav-item a {
   display: block;
+}
+
+.nav-item img {
+  margin-top: 0.25rem;
+}
+
+#homeImg {
+  width: 3.75rem;
+  height: 0.125rem;
+}
+
+#aboutImg {
+  width: 4.25rem;
+  height: 0.125rem;
+}
+
+#servicesImg {
+  width: 5.5625rem;
+  height: 0.125rem;
+}
+
+#projectsImg {
+  width: 5.875rem;
+  height: 0.125rem;
+}
+
+#contactsImg {
+  width: 5.875rem;
+  height: 0.125rem;
 }
 
 /* HERO */
@@ -91,6 +165,7 @@ html {
   position: absolute;
   top: -2.18625rem;
   left: -0.3125rem;
+  overflow: hidden;
 }
 
 .heroVector2 {
@@ -149,7 +224,7 @@ html {
   column-gap: 2.0625rem;
 }
 
-#featured-3 img {
+#featured-3 .yellow-line {
   width: 2.5rem;
   height: 0.125rem;
 }
@@ -238,6 +313,44 @@ h6 {
   height: auto;
 }
 
+.project {
+  background-color: #001f3f;
+}
+
+.project h6 {
+  color: #ffffff;
+}
+
+.project h2 {
+  color: #ffffff;
+  margin-bottom: 2.8125rem;
+}
+
+.project .feature.col {
+  border: 0;
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%;
+  padding-bottom: 1.4em;
+}
+
+.project h3 {
+  color: #ffffff;
+}
+
+.project .feature.col {
+  padding: 0;
+  margin: 0;
+}
+
+.project .icon-link {
+  color: #ffc631;
+  padding-top: 0;
+  padding-bottom: 2.6875em;
+}
+
 @media (max-width: 1399.89px) and (min-width: 1199px) {
   html {
     font-size: 13.81px;
@@ -256,6 +369,10 @@ h6 {
   .feature.col {
     font-size: 11.63px;
   }
+
+  .feature-flex {
+    margin-bottom: 2.5rem !important;
+  }
 }
 
 @media (max-width: 991.89px) and (min-width: 767px) {
@@ -266,8 +383,16 @@ h6 {
   .feature.col {
     font-size: 13.346px;
   }
+
+  .feature.col h3 {
+    line-height: 3em;
+  }
   .feature-p {
     padding-right: 5rem;
+  }
+
+  .feature-flex {
+    margin-bottom: 2.5rem !important;
   }
 
   .feature.col {
@@ -280,10 +405,23 @@ h6 {
     font-size: 6.545px;
   }
 
+  #featured-3 .icon-link img {
+    width: 3.5rem;
+    height: auto;
+  }
+
+  .feature-flex {
+    margin-bottom: 3.5rem !important;
+  }
+
   .feature.col {
-    flex-basis: auto;
-    font-size: 16px;
+    flex-basis: 48.5%;
+    font-size: 10px;
     padding: 2.5em 1.8125em 1em 1.8125em;
+  }
+
+  .feature.col h3 {
+    line-height: 3em;
   }
 
   .featureNum {
@@ -304,9 +442,28 @@ h6 {
     font-size: calc((100vw / 1320) * 32);
   }
 
+  .nav.nav-pills {
+    display: none;
+  }
+
+  #featured-3 .icon-link img {
+    width: 3rem;
+    height: auto;
+  }
+
+  .container {
+    padding: 2rem 7.5% 0 7.5%;
+  }
   .hero {
     flex-wrap: wrap;
-    padding: 2rem 7.5% 0 7.5%;
+  }
+
+  .feature.col h3 {
+    line-height: 2.5em;
+  }
+
+  .feature-flex {
+    margin-bottom: 2.5rem !important;
   }
 
   .heroes {
@@ -322,5 +479,38 @@ h6 {
 
   .feature.col {
     flex-basis: auto;
+    font-size: calc((100vw / 1320) * 43);
+  }
+}
+
+@media (max-width: 377px) {
+  .feature.col {
+    flex-basis: auto;
+    font-size: calc((100vw / 1320) * 43);
+    padding: 2.5em 1.8125em 1em 1.8125em;
+  }
+
+  .feature.col h3 {
+    line-height: 2.5em;
+  }
+
+  #featured-3 .icon-link img {
+    width: 3rem;
+    height: auto;
+  }
+
+  .feature-flex {
+    margin-bottom: 2.5rem !important;
+  }
+  .featureNum {
+    line-height: 1em;
+  }
+
+  .feature h3 {
+    line-height: 1em;
+  }
+
+  .feature-p {
+    line-height: 1.5em;
   }
 }
