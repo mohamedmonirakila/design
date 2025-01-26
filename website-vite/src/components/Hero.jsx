@@ -5,8 +5,8 @@ import Button from "./Button";
 export default function Hero() {
   return (
     <div className="container hero col-xxl-12">
-      <div className="overlay-drawing"></div>
       <div className="flex-item heroes">
+        <div className="overlay-drawing"></div>
         <div className="heroHead">
           <img src="/images/pseudo.png" alt="yellowline" className="line" />
           <p className="headingParag">PROFESSIONAL. INNOVATIVE. RELIABLE.</p>

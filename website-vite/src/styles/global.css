@@ -12,12 +12,12 @@ html {
 
 .overlay-drawing {
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  width: vw; /* Add 'px' or another unit for width */
-  height: 126vh; /* Add 'px' or another unit for height */
+  top: -22rem;
+  left: -19rem;
+  width: 1008px; /* Add 'px' or another unit for width */
+  height: 1008px; /* Add 'px' or another unit for height */
   background: url("/images/background.png"); /* Ensure proper quotes and path */
-  z-index: 0;
+  z-index: 1021;
   opacity: 0.5;
 }
 
@@ -29,6 +29,7 @@ html {
 
 .content {
   z-index: 1; /* Content stays above the overlay */
+  overflow: hidden; /* Hides any overflow from the child element */
 }
 
 .header-logo {
@@ -48,12 +49,12 @@ html {
   overflow-y: auto;
   padding: 2rem 1rem;
   transition: left 0.3s ease-in-out;
-  z-index: 1000;
+  z-index: 1060;
 }
 
 .sidebar-open {
   left: 0;
-  padding: 4.6rem 7.5%;
+  padding: 4rem 7.5%;
 }
 
 .sidebar .nav-link {
@@ -75,9 +76,13 @@ html {
 /* Hamburger menu for small screens */
 .navbar-toggler {
   position: absolute;
-  top: 6rem;
+  top: 5rem;
   left: 7.5%;
   z-index: 2;
+}
+
+.sticky-top.scrolled {
+  z-index: 1100; /* Higher z-index when scrolled */
 }
 
 .nav-item {
@@ -142,6 +147,7 @@ html {
 }
 
 .heroes {
+  position: relative;
   padding-right: 1.6875rem;
   padding-bottom: 6.5rem;
   flex-basis: 44.06%;
@@ -170,6 +176,7 @@ html {
   top: -2.18625rem;
   left: -0.3125rem;
   overflow: hidden;
+  z-index: 1050;
 }
 
 .heroVector2 {
@@ -355,6 +362,142 @@ h6 {
   padding-bottom: 2.6875em;
 }
 
+/* about */
+
+.about-page .feature-top-h2 {
+  margin: 0;
+}
+.hero-about {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  color: #ffffff;
+  padding: 3.5rem 0;
+}
+
+.about {
+  position: relative;
+  flex-basis: 42.1073%;
+}
+
+.about .heading-num2 {
+  padding-top: 3.5rem;
+}
+
+.about h1 {
+  color: #25aae1;
+  font-size: 5rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  line-height: 5rem;
+  margin: 0;
+}
+
+.about h6 {
+  color: #202c38;
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+.about-page .aboutImg {
+  flex-basis: 57.89%;
+  position: relative;
+  order: -1;
+  padding-right: 5.9375rem;
+}
+
+.aboutImg .mapImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.aboutImg .mapPin1 {
+  top: 1rem;
+  left: 5rem;
+}
+
+.aboutImg .mapPin2 {
+  top: 3.375rem;
+  left: 9.4375rem;
+}
+
+.aboutImg .mapPin3 {
+  top: 3.75rem;
+  left: 18.625rem;
+}
+.aboutImg .mapPin4 {
+  top: 10.5625rem;
+  left: 12.5rem;
+}
+.aboutImg .mapPin5 {
+  top: 8.5625rem;
+  left: 24.5rem;
+}
+.aboutImg .mapPin6 {
+  top: 20rem;
+  left: 20.9375rem;
+}
+.aboutImg .mapPin7 {
+  top: 31.5rem;
+  left: 23.25rem;
+}
+.mapPin1,
+.mapPin2,
+.mapPin3,
+.mapPin4,
+.mapPin5,
+.mapPin6,
+.mapPin7 {
+  width: 1.6875rem;
+  position: absolute;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 0 #ffc631;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+    box-shadow: 0 0 0 #ffc631;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 0 #ffc631;
+    border-radius: 50%;
+  }
+}
+
+.about .description {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  text-align: left;
+  color: #000000;
+  padding: 3.375rem 2rem 2.75rem 0;
+  margin: 0;
+}
+
+.consBtn {
+  background-color: #ffc631;
+  border: 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: left;
+  padding: 1.0625rem 1.875rem;
+}
+
 @media (max-width: 1399.89px) and (min-width: 1199px) {
   html {
     font-size: 13.81px;
@@ -362,6 +505,12 @@ h6 {
 
   .feature.col {
     font-size: 13.81px;
+  }
+
+  .overlay-drawing {
+    top: -307px;
+    left: -266px;
+    background-size: cover;
   }
 }
 
@@ -376,6 +525,14 @@ h6 {
 
   .feature-flex {
     margin-bottom: 2.5rem !important;
+  }
+
+  .overlay-drawing {
+    top: -258px;
+    left: -225px;
+    width: 850px; /* Add 'px' or another unit for width */
+    height: 850px;
+    background-size: cover;
   }
 }
 
@@ -401,6 +558,14 @@ h6 {
 
   .feature.col {
     flex-basis: 48.5%;
+  }
+
+  .overlay-drawing {
+    top: -191px;
+    left: -165px;
+    width: 630px; /* Add 'px' or another unit for width */
+    height: 630px;
+    background-size: cover;
   }
 }
 
@@ -439,6 +604,14 @@ h6 {
   .feature-p {
     line-height: 1.5em;
   }
+
+  .overlay-drawing {
+    top: -144px;
+    left: -125px;
+    width: 475px; /* Add 'px' or another unit for width */
+    height: 475px;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 576px) {
@@ -462,12 +635,28 @@ h6 {
     flex-wrap: wrap;
   }
 
+  .hero-about {
+    flex-wrap: wrap;
+  }
+
   .feature.col h3 {
     line-height: 2.5em;
   }
 
   .feature-flex {
     margin-bottom: 2.5rem !important;
+  }
+
+  .about {
+    flex-basis: 100%;
+    padding-bottom: 3.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .about-page .aboutImg {
+    flex-basis: 100%;
+    padding-bottom: 2rem;
+    padding-right: 0;
   }
 
   .heroes {
@@ -484,6 +673,59 @@ h6 {
   .feature.col {
     flex-basis: auto;
     font-size: calc((100vw / 1320) * 43);
+  }
+
+  .overlay-drawing {
+    top: calc((100vw / 1320) * -308px);
+    left: calc((100vw / 1320) * -267px);
+    width: 175vw; /* Add 'px' or another unit for width */
+    height: 175vw;
+    background-size: cover;
+  }
+
+  .aboutImg .mapPin1 {
+    position: absolute;
+    width: 1.4rem;
+    top: 0.75rem;
+    left: 3.75rem;
+  }
+
+  .aboutImg .mapPin2 {
+    width: 1.4rem;
+    position: absolute;
+    top: 2.85rem;
+    left: 8rem;
+  }
+
+  .aboutImg .mapPin3 {
+    width: 1.4rem;
+    position: absolute;
+    top: 3.2rem;
+    left: 16.15rem;
+  }
+  .aboutImg .mapPin4 {
+    width: 1.4rem;
+    position: absolute;
+    top: 9rem;
+    left: 10.9rem;
+  }
+  .aboutImg .mapPin5 {
+    width: 1.4rem;
+    position: absolute;
+    top: 7.25rem;
+    left: 21rem;
+  }
+  .aboutImg .mapPin6 {
+    width: 1.4rem;
+    position: absolute;
+    top: 17rem;
+    left: 17.9rem;
+  }
+  .aboutImg .mapPin7 {
+    width: 1.4rem;
+    position: absolute;
+    top: 27rem;
+    left: 19.75rem;
   }
 }
 

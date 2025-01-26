@@ -1,0 +1,96 @@
+.whyWorkWithUs {
+  background-color: #001f3f;
+  color: #ffffff;
+}
+
+.whyWorkWithUs .feature.col {
+  margin-top: 2rem;
+}
+
+.whyWorkWithUs .feature.col.withoutborder {
+  border: 0;
+  padding: 0;
+  margin-top: 1.75rem;
+}
+
+.whyWorkWithUs .feature-flex {
+  column-gap: 1.5625rem;
+  row-gap: 0.75rem;
+}
+
+.whyWorkWithUs .feature-top-h2 {
+  color: #ffffff;
+}
+
+.whyWorkWithUs .feature.col.withoutborder .yellow-line {
+  width: 2.5rem;
+  height: 0.125rem;
+}
+
+.whyWorkWithUs .feature.col {
+  padding: 3.125rem 2.0625rem 1.5rem 2.0625rem;
+}
+
+.whyWorkWithUs img {
+  width: 4.375rem;
+  height: 4.375rem;
+}
+
+.whyWorkWithUs h3 {
+  line-height: 2.05rem;
+  padding: 1.75rem 0 0.75rem 0;
+}
+
+@media (max-width: 991.89px) and (min-width: 767px) {
+  .whyWorkWithUs .feature.col h3 {
+    line-height: 3.5rem;
+    padding: 2.75rem 0 1.75rem 0;
+  }
+
+  .whyWorkWithUs h2 {
+    padding-right: 15rem;
+  }
+}
+
+@media (max-width: 767.89px) and (min-width: 576px) {
+  .whyWorkWithUs .feature.col h3 {
+    line-height: 3.5rem;
+    padding: 3.75rem 2.5rem 2.75rem 0;
+  }
+
+  .whyWorkWithUs .feature-p {
+    padding-right: 5rem;
+    line-height: 3rem;
+  }
+
+  .whyWorkWithUs h2 {
+    padding-right: 15rem;
+  }
+}
+@media (max-width: 576px) {
+  .whyWorkWithUs .feature.col h3 {
+    line-height: 3rem;
+    padding: 2.75rem 2.5rem 1.75rem 0;
+  }
+  .whyWorkWithUs .feature-p {
+    padding-right: 5rem;
+    line-height: 2.5rem;
+  }
+  .whyWorkWithUs h2 {
+    padding-right: 10rem;
+  }
+}
+
+@media (max-width: 377px) {
+  .whyWorkWithUs .feature.col h3 {
+    line-height: 3rem;
+    padding: 2.75rem 2.5rem 1.75rem 0;
+  }
+  .whyWorkWithUs .feature-p {
+    padding-right: 5rem;
+    line-height: 2.5rem;
+  }
+  .whyWorkWithUs h2 {
+    padding-right: 10rem;
+  }
+}

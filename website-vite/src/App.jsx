@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Feature from "./components/Feature";
 import Projects from "./components/Porjects";
 import Navbar from "./components/Navbar";
+import About from "./components/About.JSX";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <Feature />
       <Projects />
+      <About />
     </div>
   );
 }

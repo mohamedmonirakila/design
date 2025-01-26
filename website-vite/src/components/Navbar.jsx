@@ -1,16 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Toggle sidebar
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="head-background sticky-top">
+    <div
+      className={`head-background sticky-top ${
+        isScrolled || isSidebarOpen ? "scrolled" : ""
+      }`}
+    >
       <div className="container">
         <header
           className="d-flex flex-wrap justify-content-center pt-4 
@@ -103,7 +121,11 @@ export default function Navbar() {
             style={{ border: "none", background: "transparent" }}
           >
             <span
-              style={{ fontSize: "3rem", cursor: "pointer", color: "#ffc631" }}
+              style={{
+                fontSize: "3.5rem",
+                cursor: "pointer",
+                color: "#ffc631",
+              }}
             >
               ☰
             </span>
@@ -122,7 +144,7 @@ export default function Navbar() {
             >
               <span
                 style={{
-                  fontSize: "3rem",
+                  fontSize: "3.5rem",
                   cursor: "pointer",
                   color: "#ffc631",
                 }}
@@ -211,7 +233,12 @@ export default function Navbar() {
           </div>
 
           <ul className="nav nav-pills">
-            <li className="nav-item">
+            <li
+              className="nav-item"
+              style={{
+                zIndex: "1031",
+              }}
+            >
               <a href="#" className="nav-link" aria-current="page">
                 HOME
               </a>
