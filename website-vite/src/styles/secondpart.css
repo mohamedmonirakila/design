@@ -95,6 +95,124 @@
   padding: 1.812rem 0;
 }
 
+.footer {
+  background-color: #001f3f;
+  color: #ffffff;
+}
+
+.footer .row {
+  padding-top: 1rem;
+  padding-left: 0;
+  gap: 4.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 2rem 0;
+  color: #ffffff;
+}
+
+.footer h5 {
+  font-size: 1.625rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+.footer .subscribeParag {
+  font-family: "Archivo", sans-serif;
+  line-height: 1.8rem;
+  padding: 1rem 3rem 0.875rem 0;
+}
+
+.contact-details {
+  display: flex;
+  padding-top: 1rem;
+  gap: 0.5rem;
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+}
+.contact-details p {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .nav-item {
+  padding: 1.375rem 0 0.5rem 0;
+  display: flex;
+  gap: 0.3125rem;
+}
+
+.footer .nav-item img {
+  margin: 0;
+}
+
+.footer .nav-link {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+
+.footer .company-col {
+  margin-left: 2.25rem;
+  margin-right: 4.75rem;
+}
+
+.footer .form-row {
+  padding: 0;
+  margin: 0;
+}
+
+.footer button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.footer button img {
+  width: 3.376rem;
+  height: 3.376rem;
+}
+
+.footer .copyrights p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.footer .copyrights {
+  border-top-color: #29527c !important;
+}
+
+.footer .copyrights ul {
+  padding-top: 2rem;
+}
+
+.footer .copyrights ul img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 @media (max-width: 991.89px) and (min-width: 767px) {
   .whyWorkWithUs .feature.col h3 {
     line-height: 3.5rem;
@@ -119,6 +237,26 @@
 
   .whyWorkWithUs h2 {
     padding-right: 15rem;
+  }
+
+  .footer .row {
+    column-gap: 33%;
+  }
+
+  .footer .company-col {
+    margin: 0;
+  }
+
+  .footer .col-7 p {
+    padding-right: 9rem;
+  }
+
+  .subsc-col {
+    order: 3;
+  }
+
+  .company-col {
+    order: 4;
   }
 }
 @media (max-width: 576px) {
@@ -155,6 +293,26 @@
 
   .contact-page #featured-3 {
     padding: 2rem 7.5% 3.75rem 7.5%;
+  }
+
+  .footer .row {
+    column-gap: 8%;
+  }
+
+  .footer .company-col {
+    margin: 0;
+  }
+
+  .subsc-col {
+    order: 3;
+  }
+
+  .footer .col-7 p {
+    padding-right: 2rem;
+  }
+
+  .company-col {
+    order: 4;
   }
 }
 

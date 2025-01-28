@@ -168,7 +168,7 @@ export default function Navbar() {
                 />
               </li>
               <li className="nav-item">
-                <a href="/about" className="nav-link">
+                <a href="/about-us" className="nav-link">
                   ABOUT
                 </a>
                 <img
@@ -177,7 +177,9 @@ export default function Navbar() {
                   alt="yellowline"
                   style={{
                     display:
-                      window.location.pathname === "/about" ? "block" : "none",
+                      window.location.pathname === "/about-us"
+                        ? "block"
+                        : "none",
                   }}
                 />
               </li>
@@ -214,7 +216,7 @@ export default function Navbar() {
                 />
               </li>
               <li className="nav-item">
-                <a href="/contacts" className="nav-link">
+                <a href="/contact-us" className="nav-link">
                   CONTACTS
                 </a>
                 <img
@@ -223,7 +225,7 @@ export default function Navbar() {
                   id="contactsImg"
                   style={{
                     display:
-                      window.location.pathname === "/contacts"
+                      window.location.pathname === "/contact-us"
                         ? "block"
                         : "none",
                   }}
@@ -239,7 +241,7 @@ export default function Navbar() {
                 zIndex: "1031",
               }}
             >
-              <a href="#" className="nav-link" aria-current="page">
+              <a href="/" className="nav-link" aria-current="page">
                 HOME
               </a>
               <img
@@ -252,7 +254,7 @@ export default function Navbar() {
               />
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="/about-us" className="nav-link">
                 ABOUT
               </a>
               <img
@@ -261,12 +263,12 @@ export default function Navbar() {
                 alt="yellowline"
                 style={{
                   display:
-                    window.location.pathname === "/about" ? "block" : "none",
+                    window.location.pathname === "/about-us" ? "block" : "none",
                 }}
               />
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="/services" className="nav-link">
                 SERVICES
               </a>
               <img
@@ -280,7 +282,7 @@ export default function Navbar() {
               />
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="/projects" className="nav-link">
                 PROJECTS
               </a>
               <img
@@ -294,7 +296,7 @@ export default function Navbar() {
               />
             </li>
             <li className="nav-item" style={{ margin: 0, paddingRight: 0 }}>
-              <a href="#" className="nav-link contacts">
+              <a href="/contact-us" className="nav-link contacts">
                 CONTACTS
               </a>
               <img
@@ -303,7 +305,9 @@ export default function Navbar() {
                 id="contactsImg"
                 style={{
                   display:
-                    window.location.pathname === "/contacts" ? "block" : "none",
+                    window.location.pathname === "/contact-us"
+                      ? "block"
+                      : "none",
                 }}
               />
             </li>
