@@ -41,6 +41,60 @@
   padding: 1.75rem 0 0.75rem 0;
 }
 
+/* contact */
+
+.contact-page #featured-3 {
+  padding: 3.75rem 0;
+  margin-bottom: 0.625rem;
+}
+
+.hero-contact {
+  display: flex;
+  gap: 3.125rem;
+}
+
+.contact-form {
+  flex-basis: 56%;
+  padding-top: 3.375rem;
+}
+
+.form-control {
+  height: 3.375rem;
+  border-radius: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 1rem 1.3125rem;
+  color: #a9a9a9;
+}
+
+.form-control::placeholder {
+  color: #a9a9a9;
+} /* Adjust font size */
+
+.custom-textarea {
+  height: 10.25rem;
+  resize: none;
+}
+.text-row {
+  padding-bottom: 2.5625rem;
+}
+
+.contactImg {
+  flex-basis: 40%;
+}
+
+.deskImg {
+  width: 32.375rem;
+  height: 44.4375rem;
+  object-fit: cover;
+}
+
+.form-row {
+  padding: 1.812rem 0;
+}
+
 @media (max-width: 991.89px) and (min-width: 767px) {
   .whyWorkWithUs .feature.col h3 {
     line-height: 3.5rem;
@@ -68,6 +122,9 @@
   }
 }
 @media (max-width: 576px) {
+  .feature-flex {
+    margin-bottom: 0 !important;
+  }
   .whyWorkWithUs .feature.col h3 {
     line-height: 3rem;
     padding: 2.75rem 2.5rem 1.75rem 0;
@@ -78,6 +135,26 @@
   }
   .whyWorkWithUs h2 {
     padding-right: 10rem;
+  }
+
+  .hero-contact {
+    flex-wrap: wrap;
+  }
+
+  .contact-form {
+    flex-basis: 100%;
+  }
+
+  .contactImg {
+    flex-basis: 100%;
+  }
+
+  .deskImg {
+    width: 100%;
+  }
+
+  .contact-page #featured-3 {
+    padding: 2rem 7.5% 3.75rem 7.5%;
   }
 }
 
