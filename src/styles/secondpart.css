@@ -296,7 +296,7 @@
   }
 
   .footer .row {
-    column-gap: 8%;
+    column-gap: 0;
   }
 
   .footer .company-col {

@@ -102,7 +102,7 @@ export default function Footer() {
             </div>
 
             {/* Section 2 */}
-            <div className="col-4 col-sm-4 col-md-2 mb-3 contacts-col">
+            <div className="col-5 col-sm-4 col-md-2 mb-3 contacts-col">
               <h5>Contacts</h5>
               <div className="contact-details">
                 <div className="flex-item">
@@ -130,7 +130,7 @@ export default function Footer() {
             </div>
 
             {/* Section 3 */}
-            <div className="col-4 col-sm-4 col-md-1 mb-3 company-col">
+            <div className="col-5 col-sm-4 col-md-1 mb-3 company-col">
               <h5>Company</h5>
               <ul className="nav flex-column">
                 <li className="nav-item">
