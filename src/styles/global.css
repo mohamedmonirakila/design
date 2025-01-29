@@ -638,6 +638,7 @@ h6 {
   }
   .hero {
     flex-wrap: wrap;
+    overflow: hidden;
   }
 
   .hero-about {
@@ -686,6 +687,7 @@ h6 {
     width: 175vw; /* Add 'px' or another unit for width */
     height: 175vw;
     background-size: cover;
+    overflow: hidden;
   }
 
   .aboutImg .mapPin1 {

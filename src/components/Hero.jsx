@@ -6,12 +6,12 @@ import { motion } from "framer-motion";
 import TypingEffect from "./TypingEffect"; // Import the TypingEffect component
 
 const yellowlineVariants = {
-  hidden: { opacity: 0, x: -100 },
+  hidden: { opacity: 0, x: -50 },
   visible: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeOut" } },
 };
 
 const pageVariants = {
-  hidden: { opacity: 0, x: -100 },
+  hidden: { opacity: 0, x: -50 },
   visible: {
     opacity: 1,
     x: 0,
