@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Hero from "./Hero";
 import Feature from "./Feature";
 import Projects from "./Porjects";
-import About from "./About.JSX";
+import About from "./About";
 import ContactUs from "./ContactUs";
 
 export default function Home() {
