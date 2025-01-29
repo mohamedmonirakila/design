@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { color, motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Navbar() {
@@ -22,6 +23,12 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const hoverEffect = {
+    scale: 1.1,
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    color: "#ffffff",
+  };
 
   return (
     <div
@@ -114,11 +121,15 @@ export default function Navbar() {
             </svg>
           </a>
           {/* Hamburger Menu for small screens */}
-          <button
+          <motion.button
             className="navbar-toggler collapsed d-block d-sm-none"
             type="button"
             onClick={toggleSidebar}
             style={{ border: "none", background: "transparent" }}
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,198,49)",
+            }}
           >
             <span
               style={{
@@ -129,18 +140,22 @@ export default function Navbar() {
             >
               ☰
             </span>
-          </button>
+          </motion.button>
 
           <div
             className={`sidebar ${
               isSidebarOpen ? "sidebar-open" : ""
             } d-sm-none`}
           >
-            <button
+            <motion.button
               className="navbar-toggler-close collapsed d-block d-sm-none"
               type="button"
               onClick={toggleSidebar}
               style={{ border: "none", background: "transparent" }}
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255,198,49)",
+              }}
             >
               <span
                 style={{
@@ -151,12 +166,16 @@ export default function Navbar() {
               >
                 ☰
               </span>
-            </button>
+            </motion.button>
             <ul className="nav flex-column">
               <li className="nav-item">
-                <a href="/" className="nav-link">
+                <motion.a
+                  href="/"
+                  className="nav-link"
+                  whileHover={hoverEffect}
+                >
                   HOME
-                </a>
+                </motion.a>
                 <img
                   src="/images/pseudo.png"
                   alt="yellowline"
@@ -168,9 +187,13 @@ export default function Navbar() {
                 />
               </li>
               <li className="nav-item">
-                <a href="/about-us" className="nav-link">
+                <motion.a
+                  href="/about-us"
+                  className="nav-link"
+                  whileHover={hoverEffect}
+                >
                   ABOUT
-                </a>
+                </motion.a>
                 <img
                   src="/images/pseudo.png"
                   id="aboutImg"
@@ -184,9 +207,13 @@ export default function Navbar() {
                 />
               </li>
               <li className="nav-item">
-                <a href="/services" className="nav-link">
+                <motion.a
+                  href="/services"
+                  className="nav-link"
+                  whileHover={hoverEffect}
+                >
                   SERVICES
-                </a>
+                </motion.a>
                 <img
                   id="servicesImg"
                   src="/images/pseudo.png"
@@ -200,9 +227,13 @@ export default function Navbar() {
                 />
               </li>
               <li className="nav-item">
-                <a href="/projects" className="nav-link">
+                <motion.a
+                  href="/projects"
+                  className="nav-link"
+                  whileHover={hoverEffect}
+                >
                   PROJECTS
-                </a>
+                </motion.a>
                 <img
                   id="projectsImg"
                   src="/images/pseudo.png"
@@ -216,9 +247,13 @@ export default function Navbar() {
                 />
               </li>
               <li className="nav-item">
-                <a href="/contact-us" className="nav-link">
+                <motion.a
+                  href="/contact-us"
+                  className="nav-link"
+                  whileHover={hoverEffect}
+                >
                   CONTACTS
-                </a>
+                </motion.a>
                 <img
                   src="/images/pseudo.png"
                   alt="yellowline"
@@ -241,9 +276,15 @@ export default function Navbar() {
                 zIndex: "1031",
               }}
             >
-              <a href="/" className="nav-link" aria-current="page">
+              <motion.a
+                href="/"
+                className="nav-link"
+                aria-current="page"
+                whileHover={hoverEffect}
+                style={{ color: "#ffffff" }}
+              >
                 HOME
-              </a>
+              </motion.a>
               <img
                 src="/images/pseudo.png"
                 alt="yellowline"
@@ -254,9 +295,14 @@ export default function Navbar() {
               />
             </li>
             <li className="nav-item">
-              <a href="/about-us" className="nav-link">
+              <motion.a
+                href="/about-us"
+                className="nav-link"
+                whileHover={hoverEffect}
+                style={{ color: "#ffffff" }}
+              >
                 ABOUT
-              </a>
+              </motion.a>
               <img
                 src="/images/pseudo.png"
                 id="aboutImg"
@@ -268,9 +314,14 @@ export default function Navbar() {
               />
             </li>
             <li className="nav-item">
-              <a href="/services" className="nav-link">
+              <motion.a
+                href="/services"
+                className="nav-link"
+                whileHover={hoverEffect}
+                style={{ color: "#ffffff" }}
+              >
                 SERVICES
-              </a>
+              </motion.a>
               <img
                 id="servicesImg"
                 src="/images/pseudo.png"
@@ -282,9 +333,14 @@ export default function Navbar() {
               />
             </li>
             <li className="nav-item">
-              <a href="/projects" className="nav-link">
+              <motion.a
+                href="/projects"
+                className="nav-link"
+                whileHover={hoverEffect}
+                style={{ color: "#ffffff" }}
+              >
                 PROJECTS
-              </a>
+              </motion.a>
               <img
                 id="projectsImg"
                 src="/images/pseudo.png"
@@ -296,9 +352,14 @@ export default function Navbar() {
               />
             </li>
             <li className="nav-item" style={{ margin: 0, paddingRight: 0 }}>
-              <a href="/contact-us" className="nav-link contacts">
+              <motion.a
+                href="/contact-us"
+                className="nav-link contacts"
+                whileHover={hoverEffect}
+                style={{ color: "#ffffff" }}
+              >
                 CONTACTS
-              </a>
+              </motion.a>
               <img
                 src="/images/pseudo.png"
                 alt="yellowline"

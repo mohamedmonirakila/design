@@ -1,12 +1,29 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "./Button";
+import { motion } from "framer-motion";
+
+const pageVariants = {
+  hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut", staggerChildren: 0.3 },
+  },
+};
 
 export default function ContactUs() {
   return (
     <div>
       <div className="contact-page">
-        <div className="container" id="featured-3">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.01, once: false }}
+          variants={pageVariants}
+          className="container"
+          id="featured-3"
+        >
           <div className="hero-contact col-xxl-12">
             <div className="flex-item contact-form">
               <img
@@ -66,7 +83,7 @@ export default function ContactUs() {
               <img className="deskImg" src="/images/contact.svg" alt="desk" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

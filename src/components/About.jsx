@@ -1,12 +1,30 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "./Button";
+import { motion } from "framer-motion";
+
+// Animation for the entire page
+const pageVariants = {
+  hidden: { opacity: 0, y: +50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut", staggerChildren: 0.3 },
+  },
+};
 
 export default function About() {
   return (
     <div>
       <div className="about-page">
-        <div className="container" id="featured-3">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.01, once: false }}
+          variants={pageVariants}
+          className="container"
+          id="featured-3"
+        >
           <img
             className="yellow-line"
             src="/images/pseudo.png"
@@ -82,10 +100,16 @@ export default function About() {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="whyWorkWithUs">
-        <div className="container">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.01, once: false }}
+          variants={pageVariants}
+          className="container"
+        >
           <div className="row g-4 py-5 m-0 row-cols-1 row-cols-lg-3 feature-flex">
             <div className="feature col withoutborder">
               <div>
@@ -151,7 +175,7 @@ export default function About() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

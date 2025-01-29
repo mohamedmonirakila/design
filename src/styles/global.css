@@ -29,7 +29,6 @@ html {
 
 .content {
   z-index: 1; /* Content stays above the overlay */
-  overflow: hidden; /* Hides any overflow from the child element */
 }
 
 .header-logo {
@@ -50,6 +49,11 @@ html {
   padding: 2rem 1rem;
   transition: left 0.3s ease-in-out;
   z-index: 1060;
+}
+
+button {
+  position: relative;
+  z-index: 1022;
 }
 
 .sidebar-open {
@@ -324,6 +328,8 @@ h6 {
   height: auto;
 }
 
+/*project */
+
 .project {
   background-color: #001f3f;
 }
@@ -344,7 +350,6 @@ h6 {
 .project-image {
   object-fit: cover;
   width: 100%;
-  padding-bottom: 1.4em;
 }
 
 .project h3 {
@@ -524,7 +529,7 @@ h6 {
   }
 
   .feature-flex {
-    margin-bottom: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
   }
 
   .overlay-drawing {
@@ -553,7 +558,7 @@ h6 {
   }
 
   .feature-flex {
-    margin-bottom: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
   }
 
   .feature.col {
@@ -580,7 +585,7 @@ h6 {
   }
 
   .feature-flex {
-    margin-bottom: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
   }
 
   .feature.col {
@@ -644,7 +649,7 @@ h6 {
   }
 
   .feature-flex {
-    margin-bottom: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
   }
 
   .about {
@@ -746,7 +751,7 @@ h6 {
   }
 
   .feature-flex {
-    margin-bottom: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
   }
   .featureNum {
     line-height: 1em;

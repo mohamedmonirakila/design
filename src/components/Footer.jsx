@@ -1,6 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "./Button";
+import FooterBottom from "./FooterBottom";
+import { motion } from "framer-motion";
+
+const hoverEffect = {
+  scale: 1.1,
+  textShadow: "0px 0px 8px rgb(255,255,255)",
+};
 
 export default function Footer() {
   return (
@@ -103,9 +109,13 @@ export default function Footer() {
                   <img src="/images/call-icon.png" alt="call-icon" />
                 </div>
                 <div className="flex-item">
-                  <a href="tel:13136453395">1 - 313 - 645 - 3395</a>
+                  <motion.a whileHover={hoverEffect} href="tel:13136453395">
+                    1 - 313 - 645 - 3395
+                  </motion.a>
                   <br />
-                  <a href="tel:14699702609">1 - 469 - 970 - 2609</a>
+                  <motion.a whileHover={hoverEffect} href="tel:14699702609">
+                    1 - 469 - 970 - 2609
+                  </motion.a>
                 </div>
               </div>
               <div className="contact-details">
@@ -125,21 +135,33 @@ export default function Footer() {
               <ul className="nav flex-column">
                 <li className="nav-item">
                   <img src="images/list.png" alt="list-arrow" />
-                  <a href="#" className="nav-link">
+                  <motion.a
+                    whileHover={hoverEffect}
+                    href="/about-us"
+                    className="nav-link"
+                  >
                     ABOUT
-                  </a>
+                  </motion.a>
                 </li>
                 <li className="nav-item">
                   <img src="images/list.png" alt="list-arrow" />
-                  <a href="#" className="nav-link">
+                  <motion.a
+                    whileHover={hoverEffect}
+                    href="/services"
+                    className="nav-link"
+                  >
                     SERVICES
-                  </a>
+                  </motion.a>
                 </li>
                 <li className="nav-item">
                   <img src="images/list.png" alt="list-arrow" />
-                  <a href="#" className="nav-link">
+                  <motion.a
+                    whileHover={hoverEffect}
+                    href="/projects"
+                    className="nav-link"
+                  >
                     PROJECTS
-                  </a>
+                  </motion.a>
                 </li>
               </ul>
             </div>
@@ -161,7 +183,14 @@ export default function Footer() {
                       placeholder="Email"
                     />
                     <button class="btn" type="button" id="button-addon2">
-                      <img src="/images/sub-button.png" alt="send button" />
+                      <motion.img
+                        src="/images/sub-button.png"
+                        alt="send button"
+                        whileHover={{
+                          scale: 1.1,
+                          boxShadow: "0px 0px 8px rgb(255,198,49)",
+                        }}
+                      />
                     </button>
                   </div>
                 </div>
@@ -170,31 +199,7 @@ export default function Footer() {
           </div>
 
           {/* Footer Bottom */}
-          <div className="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top copyrights">
-            <p>© 2025 All rights reserved Copyrights.</p>
-            <ul className="list-unstyled d-flex">
-              <li className="ms-0">
-                <a className="link-body-emphasis" href="#">
-                  <img src="/images/facebook.png" alt="facebook-icon" />
-                </a>
-              </li>
-              <li className="ms-3">
-                <a className="link-body-emphasis" href="#">
-                  <img src="/images/instagram.png" alt="instagram-icon" />
-                </a>
-              </li>
-              <li className="ms-3">
-                <a className="link-body-emphasis" href="#">
-                  <img src="/images/twitter.png" alt="twitter-icon" />
-                </a>
-              </li>
-              <li className="ms-3">
-                <a className="link-body-emphasis" href="#">
-                  <img src="/images/whatsapp.png" alt="whatsapp-icon" />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <FooterBottom />
         </footer>
       </div>
     </div>
