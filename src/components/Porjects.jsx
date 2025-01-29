@@ -47,7 +47,15 @@ export default function Projects() {
               className="project-image"
               src="/images/project-image.png"
               alt="project"
-              whileHover={imageHoverEffect}
+              whileHover={detailsHoverEffect}
+              initial={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
+              animate={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
               style={{ padding: 0, marginBottom: "1.4rem" }}
             />
             <h3>Project Title</h3>
@@ -56,6 +64,14 @@ export default function Projects() {
               className="icon-link"
               style={{ textDecoration: "none" }}
               whileHover={detailsHoverEffect}
+              initial={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
+              animate={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
             >
               DETAILS
               <img src="/images/yellow-arrow.png" alt="arrow" />
@@ -75,6 +91,14 @@ export default function Projects() {
               className="icon-link"
               style={{ textDecoration: "none" }}
               whileHover={detailsHoverEffect}
+              initial={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
+              animate={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
             >
               DETAILS
               <img src="/images/yellow-arrow.png" alt="arrow" />
@@ -94,6 +118,14 @@ export default function Projects() {
               className="icon-link"
               style={{ textDecoration: "none" }}
               whileHover={detailsHoverEffect}
+              initial={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
+              animate={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
             >
               DETAILS
               <img src="/images/yellow-arrow.png" alt="arrow" />
@@ -113,6 +145,14 @@ export default function Projects() {
               className="icon-link"
               style={{ textDecoration: "none" }}
               whileHover={detailsHoverEffect}
+              initial={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
+              animate={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
             >
               DETAILS
               <img src="/images/yellow-arrow.png" alt="arrow" />
@@ -132,6 +172,14 @@ export default function Projects() {
               className="icon-link"
               style={{ textDecoration: "none" }}
               whileHover={detailsHoverEffect}
+              initial={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
+              animate={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
             >
               DETAILS
               <img src="/images/yellow-arrow.png" alt="arrow" />
@@ -151,6 +199,14 @@ export default function Projects() {
               className="icon-link"
               style={{ textDecoration: "none" }}
               whileHover={detailsHoverEffect}
+              initial={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
+              animate={{
+                scale: 1,
+                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
+              }}
             >
               DETAILS
               <img src="/images/yellow-arrow.png" alt="arrow" />
