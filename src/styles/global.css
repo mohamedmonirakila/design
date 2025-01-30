@@ -633,6 +633,14 @@ h6 {
     height: auto;
   }
 
+  .modal-dialog {
+    left: 12.5%;
+  }
+
+  .modal-body {
+    height: 150%;
+  }
+
   .container {
     padding: 2rem 7.5% 0 7.5%;
   }
