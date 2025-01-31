@@ -634,11 +634,8 @@ h6 {
   }
 
   .modal-dialog {
-    left: 12.5%;
-  }
-
-  .modal-body {
-    height: 150%;
+    max-width: 90% !important;
+    left: 5%;
   }
 
   .container {
