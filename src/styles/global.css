@@ -273,6 +273,7 @@ h6 {
   text-align: left;
   color: #25aae1;
 }
+
 .feature-flex {
   column-gap: 2.0625rem;
   font-size: 16px;
@@ -286,6 +287,14 @@ h6 {
   font-size: 16px;
 }
 
+.feature.col.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px black;
+}
+
 .featureNum {
   font-family: "Archivo", sans-serif;
   font-size: 3em;
@@ -293,6 +302,7 @@ h6 {
   line-height: 3.3rem;
   text-align: left;
   color: #eae6e6;
+  flex-basis: 100%;
 }
 
 .feature h3 {

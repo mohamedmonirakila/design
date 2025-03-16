@@ -43,43 +43,22 @@ export default function Feature() {
 
       <div className="row g-4 py-4 m-0 row-cols-1 row-cols-lg-3 feature-flex">
         {[
-          { num: "01", title: "Process Engineering" },
-          { num: "02", title: "Construction Services" },
-          { num: "03", title: "Civil Engineering" },
-          { num: "04", title: "Electrical Engineering" },
-          { num: "05", title: "Chemistry and Metallurgy" },
-          { num: "06", title: "Specialty Services" },
+          { num: "01", title: "Construction Services" },
+          { num: "02", title: "Civil Engineering" },
+          { num: "03", title: "Architecture Design" },
+          { num: "04", title: "Interior Design" },
+          { num: "05", title: "Landscape Design" },
+          { num: "06", title: "Commercial" },
         ].map((feature, index) => (
           <motion.div
             key={feature.num}
-            className="feature col"
+            className="feature col service"
             variants={featureVariants}
           >
             <div>
               <h2 className="featureNum">{feature.num}</h2>
             </div>
             <h3>{feature.title}</h3>
-            <p className="feature-p">
-              Senectus et netus et malesuada. Nunc pulvinar sapien et ligula
-              ullamcorper malesuada proin
-            </p>
-            <motion.a
-              href="#"
-              className="icon-link"
-              style={{ textDecoration: "none" }}
-              whileHover={detailsHoverEffect}
-              initial={{
-                scale: 1,
-                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
-              }}
-              animate={{
-                scale: 1,
-                filter: "drop-shadow(0px 0px 0px rgba(37, 170, 225, 0))",
-              }}
-            >
-              DETAILS
-              <img src="/images/vector.png" alt="arrow" />
-            </motion.a>
           </motion.div>
         ))}
       </div>

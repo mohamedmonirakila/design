@@ -47,12 +47,12 @@ export default function About() {
               </div>
               <div>
                 <p className="description">
-                  Senectus et netus et malesuada. Nunc pulvinar sapien et ligula
-                  ullamcorper malesuada proin Senectus et netus et malesuada.
-                  Nunc pulvinar sapien et ligula ullamcorper malesuada
-                  proinSenectus et netus et malesuada. Nunc pulvinar sapien et
-                  ligula ullamcorper malesuada proinSenectus et netus et
-                  malesuada.
+                
+              Our company offers a range of serivces to help you create and maintain your ideal space.
+              <br />
+              <br />
+              We offers Architecture Designs, taking your vision and bringing it to life by building custom properties
+              
                 </p>
                 <Button buttonText="ABOUT COMPANY" />
               </div>

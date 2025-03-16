@@ -49,6 +49,9 @@ const ProjectCarouselModal = ({ images, show, onClose, projectName }) => {
                   className="btn-close"
                   onClick={onClose}
                   style={{
+                    fontSize: '1.5rem',
+                    fontWeight: 'bold',
+
                     position: "absolute",
                     top: "2rem",
                     right: "2rem",
@@ -63,6 +66,7 @@ const ProjectCarouselModal = ({ images, show, onClose, projectName }) => {
                       src={img}
                       className="d-block w-100"
                       alt={`Slide ${index + 1}`}
+                      style={{ height: 400}}
                     />
                     <div className="carousel-caption">
                       <h5>{projectName}</h5>
@@ -107,7 +111,7 @@ const ProjectCard = ({ project, onShowModal }) => {
         src={project.images[0]}
         alt={project.name}
         whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px rgb(255,255,255)" }}
-        style={{ padding: 0, marginBottom: "1.4rem" }}
+        style={{ padding: 0, marginBottom: "1.4rem", minHeight: 221, height: 307}}
         onClick={(e) => {
           e.preventDefault();
           onShowModal(project.images, project.name);
@@ -150,56 +154,84 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      name: "Project 1",
+      name: "Dar El Sakn",
       images: [
-        "/images/project-image.png",
-        "/images/project-image2.png",
-        "/images/project-image.png",
+        "/images/project2/dar1.jpeg",
+        "/images/project2/dar2.jpeg",
+        "/images/project2/dar3.jpeg",
+        "/images/project2/dar4.jpeg",
+        "/images/project2/dar44.jpeg",
+        "/images/project2/dar5.jpeg",
+        "/images/project2/dar6.jpeg",
+        "/images/project2/dar7.jpeg",
+        "/images/project2/dar8.jpeg",
+        "/images/project2/dar9.jpeg",
       ],
     },
     {
       id: 2,
-      name: "Project 2",
+      name: "Office",
       images: [
-        "/images/project-image2.png",
-        "/images/project-image.png",
-        "/images/project-image2.png",
+        "/images/project1/office1.jpeg",
+        "/images/project1/office2.jpeg",
+        "/images/project1/office3.jpeg",
+        "/images/project1/office4.jpeg",
       ],
     },
     {
       id: 3,
-      name: "Project 3",
+      name: "Consulate",
       images: [
-        "/images/project-image.png",
-        "/images/project-image2.png",
-        "/images/project-image.png",
+        "/images/project4/consulate1.jpeg",
+        "/images/project4/consulate2.jpeg",
+        "/images/project4/consulate3.jpeg",
+        "/images/project4/consulate4.jpeg",
+        "/images/project4/consulate5.jpeg",
+        "/images/project4/consulate6.jpeg",
       ],
     },
     {
       id: 4,
-      name: "Project 4",
+      name: "Bedrooms",
       images: [
-        "/images/project-image2.png",
-        "/images/project-image.png",
-        "/images/project-image2.png",
+       "/images/project3/bed5.jpeg",
+        "/images/project3/bed6.jpeg",
+        "/images/project3/bed7.jpeg",
+        "/images/project3/bed1.jpeg",
+        "/images/project3/bed2.jpeg",
+        "/images/project3/bed3.jpeg",
+        "/images/project3/bed4.jpeg",
+        "/images/project3/bed10.jpeg",
+        "/images/project3/bed11.jpeg",
+        "/images/project3/bed12.jpeg",
       ],
     },
     {
       id: 5,
-      name: "Project 5",
+      name: "Bathrooms",
       images: [
-        "/images/project-image.png",
-        "/images/project-image2.png",
-        "/images/project-image.png",
+        "/images/project5/bath10.jpg",
+        "/images/project5/bath11.jpg",
+        "/images/project5/bath12.jpg",
+        "/images/project5/bath1.jpeg",
+        "/images/project5/bath2.jpeg",
+        "/images/project5/bath3.jpeg",
+        "/images/project5/bath5.jpeg",
+        "/images/project5/bath6.jpeg",
+        "/images/project5/bath7.jpeg",
       ],
     },
     {
       id: 6,
-      name: "Project 6",
+      name: "Living rooms",
       images: [
-        "/images/project-image2.png",
-        "/images/project-image.png",
-        "/images/project-image2.png",
+        "/images/project6/living1.jpg",
+        "/images/project6/living2.jpg",
+        "/images/project6/living3.jpg",
+        "/images/project6/living4.jpg",
+        "/images/project6/living5.jpeg",
+        "/images/project6/living6.jpeg",
+        "/images/project6/living7.jpeg",
       ],
     },
   ];
