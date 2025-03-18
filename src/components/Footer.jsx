@@ -21,9 +21,9 @@ export default function Footer() {
                 className="footer-logo d-flex align-items-center mb-3 mb-sm-0 me-sm-auto link-body-emphasis text-decoration-none"
               >
               <img 
-              src="/images/rehab-logo1.png"
+              src="/images/elrehab-logoo.png"
               alt="logo"
-              style={{ width: "9.5rem", height: "2.9375rem"}}
+              style={{ width: "6.5rem", height: "2.9375rem"}}
             />
 
               </a>

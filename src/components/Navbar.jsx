@@ -46,9 +46,8 @@ export default function Navbar() {
             className="header-logo d-flex align-items-center mb-3 mb-sm-0 me-sm-auto link-body-emphasis text-decoration-none"
           >
             <img 
-              src="/images/rehab-logo1.png"
+              src="/images/elrehab-logoo.png"
               alt="logo"
-              style={{ width: "14.875rem", height: "4.75rem"}}
             />
             {/* <svg
               width="14.875rem"

@@ -33,7 +33,7 @@ html {
 
 .header-logo {
   padding-top: 1.1875rem;
-}
+} 
 
 /* navbar */
 
@@ -88,6 +88,12 @@ button {
 .sticky-top.scrolled {
   z-index: 1100; /* Higher z-index when scrolled */
 }
+
+.header-logo img {
+   width: 9.75rem;
+   height: 4.75rem
+}
+
 
 .nav-item {
   padding-top: 2.5rem;
@@ -633,6 +639,11 @@ h6 {
   html {
     font-size: calc((100vw / 1320) * 32);
   }
+
+  .header-logo img {
+    width: 11.75rem;
+    height: 5.75rem
+ }
 
   .nav.nav-pills {
     display: none;
